@@ -76,8 +76,9 @@
           "type": "slide-content",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/1.png",
+            "mobile_image": "shopify:\/\/shop_images\/1.png",
             "pre_heading": "Women's Apparel",
-            "heading": "<h1>Elevate your wardrobe with our <a href=\"#\" target=\"_blank\" title=\"#\">limited-time<\/a> fashion offer!<\/h1>",
+            "heading": "<h1><strong>Elevate your wardrobe with our <\/strong><a href=\"#\" target=\"_blank\" title=\"#\"><strong>limited-time<\/strong><\/a><strong> fashion offer!<\/strong><\/h1>",
             "button_text": "Explore More",
             "button_background": "#ffffff",
             "button_link": "#",
@@ -90,9 +91,10 @@
           "type": "slide-content",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/4.png",
-            "pre_heading": "Women's Apparel",
-            "heading": "<h1>Elevate your wardrobe with our limited-time fashion offer!<\/h1>",
-            "button_text": "Explore More",
+            "mobile_image": "shopify:\/\/shop_images\/4.png",
+            "pre_heading": "Trendy Classics",
+            "heading": "<h1>Discover Signature Look: Fashion Forward and Fabulous!<\/h1>",
+            "button_text": "Shop Now",
             "button_background": "#ffffff",
             "button_link": "",
             "color_scheme": "",
@@ -104,9 +106,9 @@
           "type": "slide-content",
           "settings": {
             "desktop_image": "shopify:\/\/shop_images\/3.png",
-            "pre_heading": "Women's Apparel",
-            "heading": "<h1>Elevate your wardrobe with our limited-time fashion offer!<\/h1>",
-            "button_text": "Explore More",
+            "pre_heading": "Modern Elegance",
+            "heading": "<h1>Step into the World of Style with the Latest Fashion Trends Unveiled!<\/h1>",
+            "button_text": "Explore Now",
             "button_background": "#ffffff",
             "button_link": "",
             "color_scheme": "",
@@ -127,15 +129,94 @@
         "enable_loop": true,
         "enable_rewind": false,
         "slide_animation_interval": 3000,
-        "slide_animation": "fade",
+        "slide_animation": "loop",
         "padding_top": 16,
         "padding_bottom": 16
+      }
+    },
+    "custom_rich_text_XW7rQW": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "text_DNFP7F": {
+          "type": "text",
+          "settings": {
+            "pre_text": "What You Wear"
+          }
+        },
+        "heading_TJbFEr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fashion Emerges As A Universal <a href=\"#\" target=\"_blank\" title=\"#\">Language<\/a>"
+          }
+        },
+        "button_B8BWL7": {
+          "type": "button",
+          "settings": {
+            "button_text": "Explore More",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "text_DNFP7F",
+        "heading_TJbFEr",
+        "button_B8BWL7"
+      ],
+      "settings": {
+        "content_position": "center",
+        "alignment": "center",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "custom_image_with_text_grid_HYmMrW": {
+      "type": "custom-image-with-text-grid",
+      "blocks": {
+        "image_grid_PeQrn8": {
+          "type": "imageGrid",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4264.png",
+            "mobile_image": "shopify:\/\/shop_images\/Rectangle_4264.png",
+            "caption": "Women's",
+            "heading": "Women's Clothing Collection",
+            "description": "<p><\/p><p><\/p>",
+            "button_text": "Explore",
+            "button_link": "#",
+            "banner_color_scheme": "scheme_1",
+            "text_alignment": "center",
+            "alignment_position": "align-center justify-center"
+          }
+        },
+        "image_grid_ezwnEA": {
+          "type": "imageGrid",
+          "settings": {
+            "desktop_image": "shopify:\/\/shop_images\/Rectangle_4265.png",
+            "caption": "Fashion",
+            "heading": "Women's Sustainable Style Hub",
+            "description": "<p><\/p><p><\/p>",
+            "button_text": "Explore",
+            "button_link": "#",
+            "banner_color_scheme": "scheme_1",
+            "text_alignment": "center",
+            "alignment_position": "align-center justify-center"
+          }
+        }
+      },
+      "block_order": [
+        "image_grid_PeQrn8",
+        "image_grid_ezwnEA"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "custom_hero_banner_slider_7TiFYr"
+    "custom_hero_banner_slider_7TiFYr",
+    "custom_rich_text_XW7rQW",
+    "custom_image_with_text_grid_HYmMrW"
   ]
 }
