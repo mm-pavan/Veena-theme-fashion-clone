@@ -1,0 +1,117 @@
+.rich-text-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.rich-text-wrapper__pre-text {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  line-height: 29px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.rich-text-wrapper__heading {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 39px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+
+.rich-text-wrapper__heading a {
+  text-decoration: none;
+  color: #d03c3f;
+}
+
+.rich-text-wrapper__button {
+  color: #ffffff;
+  background-color: #d03c3f;
+  text-transform: capitalize;
+}
+.letter {
+  display: inline-block;
+  position: relative;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+@media screen and (min-width: 750px) {
+  .rich-text-wrapper__container {
+    max-width: 586px;
+  }
+
+  .rich-text-wrapper__heading {
+    line-height: 67px;
+    position: relative;
+  }
+
+  .rich-text-wrapper__heading a {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rich-text-wrapper__heading a::before {
+    content: "";
+    position: absolute;
+    background-color: #d03c3f;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: width 0.4s ease-in-out;
+    z-index: -1;
+  }
+
+  .rich-text-wrapper__heading a:hover::before {
+    width: 100%;
+  }
+
+  .rich-text-wrapper__heading a:not(:hover)::before {
+    width: 0;
+    right: 0;
+    left: auto;
+  }
+
+  .rich-text-wrapper__button {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rich-text-wrapper__button span {
+    z-index: 3;
+  }
+
+  .rich-text-wrapper__button::before {
+    content: "";
+    position: absolute;
+    background-color: #000000;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: width 0.4s ease-in-out;
+    z-index: 1;
+  }
+
+  .rich-text-wrapper__button:hover::before {
+    width: 100%;
+  }
+
+  .rich-text-wrapper__button:not(:hover)::before {
+    width: 0;
+    right: 0;
+  }
+}

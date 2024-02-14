@@ -1,0 +1,48 @@
+.custom-image-with-text-grid__position-rel {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.custom-image-with-text-grid__text-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.custom-image-with-text-grid__image-container {
+  position: relative;
+  padding-bottom: 60%;
+}
+
+@media screen and (min-width: 750px) {
+  .custom-image-with-text-grid__image-container {
+    padding-bottom: 45%;
+  }
+}
+
+.custom-image-with-text-grid__image-container img {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.custom-image-with-text-grid__position-rel:hover {
+  .custom-image-with-text-grid__image-container img {
+    transform: scale(1.1);
+  }
+}
+
+.custom-image-with-text-grid__caption {
+  list-style: disc;
+}
+
+.custom-image-with-text-grid__text-align {
+  max-width: 50rem;
+}
