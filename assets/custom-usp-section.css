@@ -1,0 +1,17 @@
+.grid__custom-content-container .grid__custom-usp-icon-container {
+  transition: transform 0.3s ease;
+  padding-bottom: 20px;
+}
+.grid__custom-content-container:hover .grid__custom-usp-icon-container {
+  transform: scaleX(-1);
+}
+.grid__custom-usp-heading {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.grid__custom-usp-description * {
+  color: rgb(0, 0, 0, 0.6);
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}

@@ -1,7 +1,156 @@
+{{ 'custom-usp-section.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+   .section-{{ section.id }}-padding {
+    background: {{ section.settings.usp_section_background_color }};
+    padding-top: {{ section.settings.padding_top | divided_by: 2 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | divided_by: 2 }}px;
+  }
+
+
+  @media (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  {% for block in section.blocks %}
+    .grid__custom-heading-{{ block.id }}{
+        color: {{ block.settings.usp_block_heading_color }}
+    }
+    .grid__custom-description-{{ block.id }}{
+        color: {{ block.settings.usp_block_description_color }}
+    }
+  {% endfor %}
+{% endstyle %}
+
+<div class="custom-usp-section section-{{ section.id }}-padding">
+  <div class="page-width">
+    <div class="grid grid--1-col grid--4-col-desktop">
+      {% for block in section.blocks %}
+        <div class="grid__item">
+          <div class="grid__custom-content-container {{ block.settings.alignment }}">
+            {% if block.settings.usp_svg_icon != blank %}
+              <div class="grid__custom-svg-icon-{{ block.id }} grid__custom-usp-icon-container">
+                {{ block.settings.usp_svg_icon }}
+              </div>
+            {% endif %}
+            {% if block.settings.usp_block_heading != blank %}
+              <div class="grid__custom-heading-{{ block.id }} h3 grid__custom-usp-heading">
+                {{ block.settings.usp_block_heading }}
+              </div>
+            {% endif %}
+            {% if block.settings.usp_block_description != blank %}
+              <div class="grid__custom-description-{{ block.id }} grid__custom-usp-description">
+                {{ block.settings.usp_block_description }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
 {
-  "name": "Custom usp section",
+  "name": "Usp icons",
   "tag": "section",
-  "settings": [{}]
+  "settings": [
+    {
+      "type": "color",
+      "id": "usp_section_background_color",
+      "label": "Section background color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "header",
+      "content": "Section padding settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    }
+  ],
+  "blocks": [
+    {
+      "type": "usp_content",
+      "name": "Custom usp block",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Usp block settings"
+        },
+        {
+          "type": "html",
+          "id": "usp_svg_icon",
+          "label": "Html input",
+          "info": "Give SVG icon which represent the block"
+        },
+        {
+          "type": "text",
+          "id": "usp_block_heading",
+          "label": "Heading",
+          "default": "Daily deals"
+        },
+        {
+          "type": "color",
+          "id": "usp_block_heading_color",
+          "label": "Heading color",
+          "default": "#000000"
+        },
+        {
+          "type": "richtext",
+          "id": "usp_block_description",
+          "label": "Paragraph",
+          "default": "<p>that bring a touch of excitement to your everyday shopping experience.</p>"
+        },
+        {
+          "type": "color",
+          "id": "usp_block_description_color",
+          "label": "Description color",
+          "default": "#757575"
+        },
+        {
+          "type": "text_alignment",
+          "id": "alignment",
+          "label": "Text alignment",
+          "default": "center"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Usp icons",
+      "blocks": [
+        {
+          "type": "usp_content"
+        },
+        {
+          "type": "usp_content"
+        },
+        {
+          "type": "usp_content"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
