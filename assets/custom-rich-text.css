@@ -60,7 +60,6 @@
 
   .rich-text-wrapper__heading a {
     position: relative;
-    overflow: hidden;
   }
 
   .rich-text-wrapper__heading a::before {
@@ -72,7 +71,6 @@
     width: 0;
     height: 3px;
     transition: width 0.4s ease-in-out;
-    z-index: -1;
   }
 
   .rich-text-wrapper__heading a:hover::before {

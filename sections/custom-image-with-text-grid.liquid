@@ -19,7 +19,7 @@
     <div class="grid grid--1-col grid--2-col-desktop">
       {% if section.blocks != blank %}
         {% for block in section.blocks %}
-          <div class="grid__item custom-image-with-text-grid__position-rel cutom-border-radius">
+          <div class="grid__item custom-image-with-text-grid__position-rel">
             {% if block.settings.desktop_image != blank %}
               <div class="custom-image-with-text-grid__image-container">
                 {% render 'responsive-image',
@@ -46,7 +46,7 @@
                 {% endif %}
 
                 {% if block.settings.description != blank %}
-                  <h2 class="h3">{{ block.settings.description }}</h2>
+                  <div class="h3">{{ block.settings.description }}</div>
                 {% endif %}
 
                 {% if block.settings.button_text != blank %}
@@ -93,7 +93,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Section Padding top",
+      "label": "Top padding",
       "default": 36
     },
     {
@@ -103,7 +103,7 @@
       "max": 100,
       "step": 1,
       "unit": "px",
-      "label": "Section Padding bottom",
+      "label": "Bottom padding ",
       "default": 36
     }
   ],
@@ -138,7 +138,7 @@
           "type": "richtext",
           "id": "description",
           "label": "Description",
-          "default": "<p>Heading<p>"
+          "default": "<p>Description<p>"
         },
         {
           "type": "text",

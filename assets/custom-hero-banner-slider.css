@@ -1,7 +1,3 @@
-.h1 p {
-  font-size: 20px;
-}
-
 .splide-section-radius {
   border-radius: 16px;
   overflow: hidden;
@@ -48,7 +44,7 @@
   backdrop-filter: blur(10px);
   word-break: break-word;
 }
-.h1 a {
+.custom-hero-banner-slider__heading a {
   color: inherit;
   text-decoration: none;
 }
@@ -110,10 +106,13 @@
   .custom-hero-banner-slider__content-container {
     padding-bottom: 50%;
   }
-  .h1 a:hover {
+  .custom-hero-banner-slider__heading a {
+    position: relative;
+  }
+  .custom-hero-banner-slider__heading a:hover {
     color: #d03c3f;
   }
-  .h1 a::before {
+  .custom-hero-banner-slider__heading a::before {
     content: "";
     position: absolute;
     background-color: #d03c3f;
@@ -122,12 +121,11 @@
     width: 0;
     height: 3px;
     transition: width 0.4s ease-in-out;
-    z-index: -1;
   }
-  .h1 a:hover::before {
+  .custom-hero-banner-slider__heading a:hover::before {
     width: 100%;
   }
-  .h1 a:not(:hover)::before {
+  .custom-hero-banner-slider__heading a:not(:hover)::before {
     width: 0;
     right: 0;
     left: auto;
