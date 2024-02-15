@@ -122,6 +122,7 @@
         "slide_content_T7k78D",
         "slide_content_apWtHP"
       ],
+      "disabled": true,
       "settings": {
         "enable_autoplay": false,
         "enable_dots": true,
@@ -162,6 +163,7 @@
         "heading_TJbFEr",
         "button_B8BWL7"
       ],
+      "disabled": true,
       "settings": {
         "content_position": "center",
         "alignment": "center",
@@ -207,6 +209,7 @@
         "image_grid_PeQrn8",
         "image_grid_ezwnEA"
       ],
+      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 20
@@ -266,10 +269,80 @@
         "usp_content_yJjMYF",
         "usp_content_JHH6Re"
       ],
+      "disabled": true,
       "settings": {
         "usp_section_background_color": "#f5f5f5",
         "padding_top": 39,
         "padding_bottom": 42
+      }
+    },
+    "custom_lookbook_KTtTNL": {
+      "type": "custom-lookbook",
+      "blocks": {
+        "lookbook_card_V3zDW7": {
+          "type": "lookbook_card",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/1_86583ec4-835c-45cd-999c-b7e8b1bdc86e.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/1_86583ec4-835c-45cd-999c-b7e8b1bdc86e.jpg",
+            "dot_one_top_position": 19,
+            "dot_one_left_position": 29,
+            "dot_two_top_position": 48,
+            "dot_two_left_position": 29,
+            "lookbook_card_heading": "Women's Winter Clothes",
+            "lookbook_card_heading_color": "#000000",
+            "lookbook_card_description": "<p>Welcome the season in style with our Women's Winter Clothes Collection – where warmth meets sophistication.<\/p>",
+            "lookbook_card_description_color": "#000000",
+            "lookbook_card_button_label": "Discover more",
+            "lookbook_card_button_link": "#",
+            "lookbook_card_button_color": "#ffffff",
+            "product": ""
+          }
+        },
+        "lookbook_card_MFVU4V": {
+          "type": "lookbook_card",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/2_a11b3061-4da9-4c80-ad4a-2ed8e9b0280f.jpg",
+            "dot_one_top_position": 17,
+            "dot_one_left_position": 29,
+            "dot_two_top_position": 43,
+            "dot_two_left_position": 19,
+            "lookbook_card_heading": "Our Men's Winter Clothes",
+            "lookbook_card_heading_color": "#000000",
+            "lookbook_card_description": "<p>welcome to our Men's Winter Clothes Collection, where every piece is a statement in comfort and style.<\/p>",
+            "lookbook_card_description_color": "#000000",
+            "lookbook_card_button_label": "Discover more",
+            "lookbook_card_button_link": "#",
+            "lookbook_card_button_color": "#ffffff",
+            "product": ""
+          }
+        },
+        "lookbook_card_jVeAzp": {
+          "type": "lookbook_card",
+          "settings": {
+            "image_desktop": "shopify:\/\/shop_images\/3_e98fbf29-76ef-498a-837a-517c37dafb8d.jpg",
+            "dot_one_top_position": 10,
+            "dot_one_left_position": 30,
+            "dot_two_top_position": 58,
+            "dot_two_left_position": 33,
+            "lookbook_card_heading": "Women's Outdoor Clothes Collection",
+            "lookbook_card_heading_color": "#000000",
+            "lookbook_card_description": "<p>Embrace the beauty of nature with gear that complements your adventurous spirit.<\/p>",
+            "lookbook_card_description_color": "#000000",
+            "lookbook_card_button_label": "Discover more",
+            "lookbook_card_button_link": "#",
+            "lookbook_card_button_color": "#ffffff",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "lookbook_card_V3zDW7",
+        "lookbook_card_MFVU4V",
+        "lookbook_card_jVeAzp"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     }
   },
@@ -279,6 +352,7 @@
     "custom_hero_banner_slider_7TiFYr",
     "custom_rich_text_XW7rQW",
     "custom_image_with_text_grid_HYmMrW",
-    "custom_usp_section_4pLtJC"
+    "custom_usp_section_4pLtJC",
+    "custom_lookbook_KTtTNL"
   ]
 }
