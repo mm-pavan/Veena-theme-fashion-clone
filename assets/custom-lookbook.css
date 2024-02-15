@@ -1,0 +1,55 @@
+.grid__lookbook-card-container{
+    position: relative;
+    margin-bottom: 15px;
+}
+.grid__card-heading{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.grid__card-description * {
+    font-size: 14px;
+    margin: 0 0 20px ;
+    color: #000000cc;
+    font-weight: 400;
+
+}
+.grid__lookback-card-dot{
+    position: absolute;
+    top: 0;
+}
+.grid__lookback-card-dot::before{
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    top: 3px;
+    left: 3px;
+    transition: transform 0.3s ease;
+}
+.grid__lookback-card-dot:hover::before {
+    transform: scale(1.2);
+}
+.grid__lookback-card-dot:hover::after {
+    transform: scale(1.2);
+}
+.grid__lookback-card-dot::after{
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #000000;
+    top: 11px;
+    left: 11px;
+}
+@media (min-width: 750px){
+    .grid__card-heading{
+        font-size: 26px;
+    }
+    .grid__card-description *{
+        font-size: 18px;
+    }
+}
