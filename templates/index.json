@@ -122,7 +122,6 @@
         "slide_content_T7k78D",
         "slide_content_apWtHP"
       ],
-      "disabled": true,
       "settings": {
         "enable_autoplay": false,
         "enable_dots": true,
@@ -209,7 +208,6 @@
         "image_grid_PeQrn8",
         "image_grid_ezwnEA"
       ],
-      "disabled": true,
       "settings": {
         "padding_top": 20,
         "padding_bottom": 20
@@ -269,7 +267,6 @@
         "usp_content_yJjMYF",
         "usp_content_JHH6Re"
       ],
-      "disabled": true,
       "settings": {
         "usp_section_background_color": "#f5f5f5",
         "padding_top": 39,
