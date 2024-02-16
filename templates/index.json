@@ -295,7 +295,8 @@
             "lookbook_card_button_label": "Discover more",
             "lookbook_card_button_link": "#",
             "lookbook_card_button_color": "#ffffff",
-            "product": ""
+            "first_product": "highland-tee-worn-black",
+            "second_product": "lean-dean-dry-gentle-worn"
           }
         },
         "lookbook_card_MFVU4V": {
@@ -313,7 +314,8 @@
             "lookbook_card_button_label": "Discover more",
             "lookbook_card_button_link": "#",
             "lookbook_card_button_color": "#ffffff",
-            "product": ""
+            "first_product": "jude-navy-chevron-shirt",
+            "second_product": "lean-dean-plain-stone"
           }
         },
         "lookbook_card_jVeAzp": {
@@ -331,7 +333,8 @@
             "lookbook_card_button_label": "Discover more",
             "lookbook_card_button_link": "#",
             "lookbook_card_button_color": "#ffffff",
-            "product": ""
+            "first_product": "august-rib-wool-oak",
+            "second_product": "lean-dean-dry-gentle-worn"
           }
         }
       },

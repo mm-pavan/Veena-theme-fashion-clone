@@ -1,24 +1,24 @@
-.grid__lookbook-card-container{
+.custom-lookbook__card-container{
     position: relative;
     margin-bottom: 15px;
 }
-.grid__card-heading{
+.custom-lookbook__card-heading{
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 5px;
 }
-.grid__card-description * {
+.custom-lookbook__card-description * {
     font-size: 14px;
     margin: 0 0 20px ;
     color: #000000cc;
     font-weight: 400;
 
 }
-.grid__lookback-card-dot{
+.custom-lookbook__card-dot{
     position: absolute;
     top: 0;
 }
-.grid__lookback-card-dot::before{
+.custom-lookbook__card-dot::before{
     content: "";
     position: absolute;
     height: 24px;
@@ -29,13 +29,13 @@
     left: 3px;
     transition: transform 0.3s ease;
 }
-.grid__lookback-card-dot:hover::before {
+.custom-lookbook__card-dot:hover::before {
     transform: scale(1.2);
 }
-.grid__lookback-card-dot:hover::after {
+.custom-lookbook__card-dot:hover::after {
     transform: scale(1.2);
 }
-.grid__lookback-card-dot::after{
+.custom-lookbook__card-dot::after{
     content: "";
     position: absolute;
     height: 8px;
@@ -45,11 +45,32 @@
     top: 11px;
     left: 11px;
 }
+.custom-lookbook__card-product{
+    position: relative;
+    left : 30px;
+    padding: 6px;
+    height: 100px;
+    width: 200px;   
+    background: #ffffff;
+    border-radius: 16px;
+}
+.custom-lookbook__card-product_content{
+    display: flex;
+}
+.custom-lookbook__card-product-image{
+    width: 30%;
+}
+.custom-lookbook_product-card-content-text-container{
+    width: 70%;
+}
+.custom-lookbook_product-card-content-text-container *{
+    color: black;
+}
 @media (min-width: 750px){
-    .grid__card-heading{
+    .custom-lookbook__card-heading{
         font-size: 26px;
     }
-    .grid__card-description *{
+    .custom-lookbook__card-description *{
         font-size: 18px;
     }
 }

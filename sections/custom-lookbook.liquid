@@ -13,13 +13,13 @@
     }
   }
   {% for block in section.blocks %}
-    .grid_card-heading-{{ block.id }}{
+    .custom-lookbook_card-heading-{{ block.id }}{
         color: {{ block.settings.lookbook_card_heading_color }};
     }
-    .grid_card-description-{{ block.id }}{
+    .custom-lookbook_card-description-{{ block.id }}{
         color: {{ block.settings.lookbook_card_description_color }};
     }
-    .grid_card-button-{{ block.id }}{
+    .custom-lookbook_card-button-{{ block.id }}{
         color: {{ block.settings.lookbook_card_button_color }};
     }
     .dot-one-{{ block.id }}{
@@ -39,7 +39,7 @@
     <div class="grid grid--1-col grid--2-col-tablet grid--3-col-desktop">
       {% for block in section.blocks %}
         <div class="grid__item">
-          <div class="grid__lookbook-card-container">
+          <div class="custom-lookbook__card-container">
             {% if block.settings.image_desktop %}
               {% render 'responsive-image',
                 class: 'media media--portrait media--radius',
@@ -51,21 +51,35 @@
                 {{ 'collection-apparel-1' | placeholder_svg_tag }}
               </div>
             {% endif %}
-            <div class="grid__lookback-card-dot dot-one-{{ block.id }}">
-                <div class="grid__lokkback-card-product-">
-                    
+            <div class="custom-lookbook__card-dot dot-one-{{ block.id }}">
+                <div class="custom-lookbook__card-product">
+                    <div class="custom-lookbook__card-product_content">
+                        <img src="{{block.settings.first_product | image_url}}" height="30px" width="20px" class="custom-lookbook__card-product-image"/> 
+                        <div class="custom-lookbook_product-card-content-text-container">
+                            <a class="h4" href="{{ block.settings.first_product.url }}">{{ block.settings.first_product.title }}</a>
+                            <div class="h5">{{ block.settings.first_product.price | money_with_currency }}</div>
+                            <div class="h5">{{ block.settings.first_product.compare_at_price | money_with_currency }}</div>
+                        </div>
+                    </div> 
                 </div>
             </div>
-            <div class="grid__lookback-card-dot dot-two-{{ block.id }}">
-                <div class="grid__lokkback-card-product">
-                    product details
+            <div class="custom-lookbook__card-dot dot-two-{{ block.id }}">
+                <div class="custom-lookbook__card-product">
+                    <div class="custom-lookbook__card-product_content">
+                        <img src="{{block.settings.second_product | image_url}}" height="30px" width="20px" class="custom-lookbook__card-product-image"/> 
+                        <div class="custom-lookbook_product-card-content-text-container">
+                            <a class="h4" href="{{ block.settings.second_product.url }}">{{ block.settings.second_product.title }}</a>
+                            <div class="h5">{{ block.settings.second_product.price | money_with_currency }}</div>
+                            <div class="h5">{{ block.settings.second_product.compare_at_price | money_with_currency }}</div>
+                        </div>
+                    </div> 
                 </div>
             </div>
             {%  if block.settings.lookbook_card_heading %}
-                <div class="h3 grid__card-heading grid_card-heading-{{ block.id }}">{{ block.settings.lookbook_card_heading }}</div>
+                <div class="h3 custom-lookbook__card-heading custom-lookbook_card-heading-{{ block.id }}">{{ block.settings.lookbook_card_heading }}</div>
             {% endif %}
             {%  if block.settings.lookbook_card_description %}
-                <div class="grid__card-description grid_card-description-{{ block.id }}">{{ block.settings.lookbook_card_description }}</div>
+                <div class="custom-lookbook__card-description custom-lookbook_card-description-{{ block.id }}">{{ block.settings.lookbook_card_description }}</div>
             {% endif %}
             {%  if block.settings.lookbook_card_button_label %}
                 <a class="button" 
@@ -241,8 +255,13 @@
           },
         {
           "type": "product",
-          "id": "product",
-          "label": "Product"
+          "id": "first_product",
+          "label": "First product"
+        },
+        {
+          "type": "product",
+          "id": "second_product",
+          "label": "Second product"
         }
       ]
     }
