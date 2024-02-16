@@ -1,0 +1,180 @@
+{% schema %}
+{
+    "name": "Custom collection list",
+    "tag" :"section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "section_heading",
+            "label": "Section heading",
+            "default": "Featured Collection"
+        },
+        {
+            "type": "color",
+            "id": "section_heading_color",
+            "label": "Section heading color",
+            "default": "#000000"
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_slider",
+            "label": "Enable slider",
+            "default": true
+        },
+        {
+            "type": "header",
+            "content": "Featured Image settings"
+          },
+          {
+            "type": "image_picker",
+            "id": "desktop_image",
+            "label": "Image (Desktop)"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Image (Mobile)"
+          },
+          {
+            "type": "header",
+            "content": "Text settings"
+          },
+          {
+            "type": "text",
+            "id": "pre_heading",
+            "label": "Pre heading text",
+            "default": "Women's Apparel"
+          },
+  
+          {
+            "type": "richtext",
+            "id": "heading",
+            "label": "Heading text",
+            "default": "<p>Elevate your wardrobe with our limited-time fashion offer!</p>"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button text",
+            "default": "Explore More"
+          },
+          {
+            "type": "color",
+            "id": "button_background",
+            "label": "Button background color",
+            "default": "#ffffff"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+          },
+       
+        {
+            "type": "checkbox",
+            "id": "enable_featured_image",
+            "label": "Enable featured image",
+            "default": false
+        },
+        {
+            "type": "product_list",
+            "id": "product_list",
+            "label": "Products",
+            "limit": 12
+        },
+        {
+            "type": "select",
+            "id": "heading_size",
+            "label": "Heading size",
+            "options": [
+              {
+                "value": "h3",
+                "label": "Small"
+              },
+              {
+                "value": "h2",
+                "label": "Medium"
+              },
+              {
+                "value": "h1",
+                "label": "Large"
+              }
+            ],
+            "default": "h2"
+        },
+        {
+            "type": "select",
+            "id": "content_alignment",
+            "label": "Content alignment",
+            "default": "justify-center align-center",
+            "options": [
+                {
+                "label": "Top left",
+                "value": "justify-start align-start"
+                },
+                {
+                "label": "Top center",
+                "value": "justify-center align-start"
+                },
+                {
+                "label": "Top right",
+                "value": "justify-end align-start"
+                },
+                {
+                "label": "Middle left",
+                "value": "justify-start align-center"
+                },
+                {
+                "label": "Middle center",
+                "value": "justify-center align-center"
+                },
+                {
+                "label": "Middle right",
+                "value": "justify-end align-center"
+                },
+                {
+                "label": "Bottom left",
+                "value": "justify-start align-end"
+                },
+                {
+                "label": "Bottom center",
+                "value": "justify-center align-end"
+                },
+                {
+                "label": "Bottom-Right",
+                "value": "justify-end align-end"
+                }
+            ]
+        },          
+        {
+            "type": "header",
+            "content": "Section padding settings"
+        },
+        {
+        "type": "range",
+        "id": "padding_top",
+        "label": "Top padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 20
+        },
+        {
+        "type": "range",
+        "id": "padding_bottom",
+        "label": "Bottom padding",
+        "min": 0,
+        "max": 100,
+        "step": 1,
+        "unit": "px",
+        "default": 20
+        }
+    ],
+    "presets": [
+        {
+            "name": "Custom collection list"
+        }
+    ]
+}
+{% endschema %}

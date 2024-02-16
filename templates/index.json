@@ -344,6 +344,19 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom_featured_collections_mLFa7G": {
+      "type": "custom-featured-collections",
+      "settings": {
+        "heading": "Featured Collection",
+        "heading_color": "#000000",
+        "enable_slider": true,
+        "product_list": [
+
+        ],
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
@@ -353,6 +366,7 @@
     "custom_rich_text_XW7rQW",
     "custom_image_with_text_grid_HYmMrW",
     "custom_usp_section_4pLtJC",
-    "custom_lookbook_KTtTNL"
+    "custom_lookbook_KTtTNL",
+    "custom_featured_collections_mLFa7G"
   ]
 }
