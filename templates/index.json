@@ -123,15 +123,50 @@
         "slide_content_apWtHP"
       ],
       "settings": {
-        "enable_autoplay": false,
+        "enable_autoplay": true,
         "enable_dots": true,
         "enable_arrows": true,
         "enable_loop": true,
-        "enable_rewind": false,
+        "enable_rewind": true,
         "slide_animation_interval": 3000,
         "slide_animation": "loop",
         "padding_top": 16,
         "padding_bottom": 16
+      }
+    },
+    "custom_rich_text_tt96EJ": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "text_93chNb": {
+          "type": "text",
+          "settings": {
+            "pre_text": "What You Wear"
+          }
+        },
+        "heading_Jz4PzC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fashion EmergesAs A Universal <a href=\"https:\/\/veena-theme-fashion.myshopify.com\/collections\" title=\"All collections\">Language<\/a>"
+          }
+        },
+        "button_FDXhKV": {
+          "type": "button",
+          "settings": {
+            "button_text": "Button label",
+            "button_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "text_93chNb",
+        "heading_Jz4PzC",
+        "button_FDXhKV"
+      ],
+      "settings": {
+        "content_position": "left",
+        "alignment": "center",
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "custom_rich_text_XW7rQW": {
@@ -269,8 +304,8 @@
       ],
       "settings": {
         "usp_section_background_color": "#f5f5f5",
-        "padding_top": 39,
-        "padding_bottom": 42
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "custom_lookbook_KTtTNL": {
@@ -345,15 +380,30 @@
         "padding_bottom": 20
       }
     },
-    "custom_featured_collections_mLFa7G": {
+    "custom_featured_collections_YQnynB": {
       "type": "custom-featured-collections",
       "settings": {
-        "heading": "Featured Collection",
-        "heading_color": "#000000",
+        "section_heading": "Featured Collection",
+        "section_heading_color": "#000000",
         "enable_slider": true,
+        "pre_heading": "Women's Apparel",
+        "heading": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
+        "button_text": "Explore More",
+        "button_background": "#ffffff",
+        "button_link": "",
+        "enable_featured_image": false,
         "product_list": [
-
+          "full-sleeve-high-neck-t-shirt",
+          "full-sleeve-high-neck-t-shirt-1",
+          "men-winter-jacket",
+          "mens-half-sleeve-t-shirt",
+          "mens-winter-hooded-jacket",
+          "women-shirt-beige-dress",
+          "women-solid-casual-jacket",
+          "womens-casual-jacket"
         ],
+        "heading_size": "h2",
+        "content_alignment": "justify-center align-center",
         "padding_top": 20,
         "padding_bottom": 20
       }
@@ -363,10 +413,11 @@
     "image_banner",
     "featured_collection",
     "custom_hero_banner_slider_7TiFYr",
+    "custom_rich_text_tt96EJ",
     "custom_rich_text_XW7rQW",
     "custom_image_with_text_grid_HYmMrW",
     "custom_usp_section_4pLtJC",
     "custom_lookbook_KTtTNL",
-    "custom_featured_collections_mLFa7G"
+    "custom_featured_collections_YQnynB"
   ]
 }
