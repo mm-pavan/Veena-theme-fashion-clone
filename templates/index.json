@@ -379,6 +379,34 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
+    },
+    "custom_featured_collections_YQnynB": {
+      "type": "custom-featured-collections",
+      "settings": {
+        "section_heading": "Featured Collection",
+        "section_heading_color": "#000000",
+        "enable_slider": true,
+        "pre_heading": "Women's Apparel",
+        "heading": "<p>Elevate your wardrobe with our limited-time fashion offer!<\/p>",
+        "button_text": "Explore More",
+        "button_background": "#ffffff",
+        "button_link": "",
+        "enable_featured_image": false,
+        "product_list": [
+          "full-sleeve-high-neck-t-shirt",
+          "full-sleeve-high-neck-t-shirt-1",
+          "men-winter-jacket",
+          "mens-half-sleeve-t-shirt",
+          "mens-winter-hooded-jacket",
+          "women-shirt-beige-dress",
+          "women-solid-casual-jacket",
+          "womens-casual-jacket"
+        ],
+        "heading_size": "h2",
+        "content_alignment": "justify-center align-center",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
     }
   },
   "order": [
@@ -389,6 +417,7 @@
     "custom_rich_text_XW7rQW",
     "custom_image_with_text_grid_HYmMrW",
     "custom_usp_section_4pLtJC",
-    "custom_lookbook_KTtTNL"
+    "custom_lookbook_KTtTNL",
+    "custom_featured_collections_YQnynB"
   ]
 }
