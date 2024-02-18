@@ -134,6 +134,41 @@
         "padding_bottom": 16
       }
     },
+    "custom_rich_text_tt96EJ": {
+      "type": "custom-rich-text",
+      "blocks": {
+        "text_93chNb": {
+          "type": "text",
+          "settings": {
+            "pre_text": "Pre text"
+          }
+        },
+        "heading_Jz4PzC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand"
+          }
+        },
+        "button_FDXhKV": {
+          "type": "button",
+          "settings": {
+            "button_text": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_93chNb",
+        "heading_Jz4PzC",
+        "button_FDXhKV"
+      ],
+      "settings": {
+        "content_position": "left",
+        "alignment": "center",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
     "custom_rich_text_XW7rQW": {
       "type": "custom-rich-text",
       "blocks": {
@@ -269,8 +304,8 @@
       ],
       "settings": {
         "usp_section_background_color": "#f5f5f5",
-        "padding_top": 39,
-        "padding_bottom": 42
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "custom_lookbook_KTtTNL": {
@@ -350,6 +385,7 @@
     "image_banner",
     "featured_collection",
     "custom_hero_banner_slider_7TiFYr",
+    "custom_rich_text_tt96EJ",
     "custom_rich_text_XW7rQW",
     "custom_image_with_text_grid_HYmMrW",
     "custom_usp_section_4pLtJC",
