@@ -140,20 +140,20 @@
         "text_93chNb": {
           "type": "text",
           "settings": {
-            "pre_text": "Pre text"
+            "pre_text": "What You Wear"
           }
         },
         "heading_Jz4PzC": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand"
+            "heading": "Fashion EmergesAs A Universal <a href=\"https:\/\/veena-theme-fashion.myshopify.com\/collections\" title=\"All collections\">Language<\/a>"
           }
         },
         "button_FDXhKV": {
           "type": "button",
           "settings": {
             "button_text": "Button label",
-            "button_link": ""
+            "button_link": "#"
           }
         }
       },
